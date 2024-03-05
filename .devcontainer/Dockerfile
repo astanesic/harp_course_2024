@@ -13,4 +13,4 @@ RUN install2.r --error --skipinstalled -n -1 \
         here \
         remotes\
     && rm -rf /tmp/downloaded_packages \
-    && R -q -e 'remotes::install_github("harphub/harp","develop")'
+    && R -q -e 'remotes::install_github("harphub/harp")'
