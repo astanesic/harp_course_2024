@@ -4,6 +4,8 @@ ARG VARIANT="4.2"
 FROM ghcr.io/rocker-org/devcontainer/tidyverse:${VARIANT}
 
 RUN apt-get update && apt-get install -y libproj-dev
+RUN apt-get update && apt-get install -y libeccodes-dev
+RUN apt-get update && apt-get install -y libeccodes-dev
 
 RUN install2.r --error --skipinstalled -n -1 \
         statip \
